@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Artists</title>
+</head>
+<body>
+    <h1>Artists List</h1>
+    <ul>
+        {% for artist in artists %}
+            <li>{{ artist.name }} ({{ artist.debut_year }})</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>

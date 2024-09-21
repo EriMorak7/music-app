@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Albums</title>
+</head>
+<body>
+    <h1>Albums List</h1>
+    <ul>
+        {% for album in albums %}
+            <li>{{ album.title }} - {{ album.release_date }} (Artist: {{ album.artist.name }})</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
